@@ -33,7 +33,7 @@ editor:
 - 중간 강도 스타틴과 에제티미브의 조합으로도 LDL-C를 충분히 낮추는 것이
   가능하다면 스타인의 부작용과 불내증을 감소할 것으로 기대.
 
-- 그러나 두 요법의 랜덤화된 실험이 존재하지 않음.
+- 그러나 두 요법의 장기적인 효과를 비교한 대규모 RCT가 존재하지 않음.
 
 - 따라서 두 요법 간 효능과 안정성을 비교하는 RACING trial 을 진행했다.
 
@@ -57,17 +57,18 @@ editor:
 
 - 환자들은 각각 1대1로 혼합복용 또는 고강도 단독 복용으로 지정
 
+- LDL-C 농도가 100mg/dL 이하인지 여부, baseline에 당뇨병을 가지고
+  있었는지 여부로 층화한다.
+
 - permuted-block randomisation(4 or 6): 순열 블록 무작위 배정; 환자 4명
-  혹은 6명이 한 block이 되어 한 블럭 안에서 배정 순서를 섞어 치료군과
+  혹은 6명이 한 block이 되어 한 블럭 안에서 배정 순서를 섞어 과
   대조군으로 나누었다.
 
-- 결과적으로 대조군과 치료군의 비율이 1대1이 될 수있다.
+- 결과적으로 혼합복용과 단독복용의 비율이 1대1이 될 수 있다.
 
-- LDL-C 농도가 100mg/dL 이하인지 여부, baseline에 당뇨병을 가지고
-  있었는지 여부로 stratified 한다.
+- 동시에 stratified 기준의 사람도 1대1의 비율로 나뉜다.
 
-- 이는 복용 방법과 결과에 영향을 주는 핵심 요인들 사이의 상관관계를
-  없앤다.
+- figure_stratified_random
 
 ## Procedures
 
@@ -101,32 +102,39 @@ editor:
 - C = 0.02 - Z\_{0.05} \* sqrt{Var(D)}
 - C = -0.01 + Z\_{0.20} \* sqrt{Var(D)}
 - Var(D) = {p_1(1-p_1) + p_2(1-p_2)} / {n}
-- n =(Z\_{0.05} + Z\_{0.20})\^2 \* \[p_1(1-p_1) + p_2(1-p_2)\] / (0.02 -
-  (-0.01))\^2
+- $$n = \frac{(Z_{0.05} + Z_{0.20})^2 \cdot [p_1(1-p_1) + p_2(1-p_2)]}{(0.02-(p_1-p_2)^2}$$
 - n= 1605
 - 두 그룹이고 예상 이탈률을 15%로 잡았다.
 - N = 1605\*2 / 0.85 = 3780
 
 ## Statistical Analysis
+- primary event
 
-- 범주형 변수: N% : Chi-square method
+- Kaplan-Meier curves
 
-- 연속형 변수: Mean(SD) or Median(IQR): t-test
+- $S(t) = \prod_{t_i \leq t} \left[ 1 - \frac{d_i}{n_i} \right]$
 
 - log rank test(두 그룹 간의 생존 차이가 존재하는가)
-- $$\chi^2 = \frac{\left( \sum_{j} (O_{1j} - E_{1j}) \right)^2}{\sum_{j} V_j}$$
 
-- Cox regression & hazard ratio(두 투약 방법의 차이 수치)
+- $\chi^2 = \frac{\left( \sum_{j} (O_{1j} - E_{1j}) \right)^2}{\sum_{j} V_j}$
 
-- 단측 검정의 95% CI 상한\< 2.0%p인 경우 비열등하다
-
-- Secondary endpoint : log rank test ; 다중성에 대한 보정이 되어있지
-  않다. type I error를 유의하여 해석 
-  
+- 단측 검정의 95% CI 상한\< 2.0%p인 경우
+비열등하다
 
 ## Statistical Analysis
 
--primary analysis -intention to treat(ITT); 모든 환자들이 랜덤으로
+-Cox proportional hazard model(얼마나 차이가 존재하는가)
+
+$$h(t\vert{}X) = h_0(t) \exp(\beta_1 X_1 + \beta_2 X_2 +
+\dots + \beta_p X_p)$$ 
+$$HR = \exp(\beta_1)$$
+
+- Secondary endpoint : log rank test ; 다중성에 대한 보정이 되어있지
+  않다. type I error를 유의하여 해석
+
+## Statistical Analysis
+
+primary analysis -intention to treat(ITT); 모든 환자들이 랜덤으로
 지정되고 중간에 이탈자 또한 실험 참여자로 유지-\> 실험의 무작위성을
 유지할 수 있다.
 
@@ -135,9 +143,11 @@ editor:
 
 -safety assessment: 약물을 투여받은 이력이 전혀 없는 사람을 제외.
 
+-undefined
+
 ## Result
 
--2017.02.14~2018.12.18 3780명 모집 -1894명은 혼합 복용, 1886명은 단독
+-2017.02.14\~2018.12.18 3780명 모집 -1894명은 혼합 복용, 1886명은 단독
 복용 -두 집단의 기저 특성은 통계적으로 다르지 않았다. -한국인, 평균나이
 64세, 남성 75%, 40% 심근경색 과거력 등
 
@@ -176,7 +186,7 @@ $$\chi^2 = 19.96 + 35.38 + 20.00 + 35.41 \approx \mathbf{110.75}$$ - df
 -두 군의 이탈률, 약물 투여량 감소 환자수는 각각 88명(4.8%) vs
 150(8.2%)(all p-value \< 0.0001)
 
-## Conclusion 
+## Conclusion
 
 -RACING trial은 3년의 관찰 결과, ASCVD 환자를 대상으로 중간 강도
 statin과 ezetimibe의 병용요법이 고강도 statin 단독요법에 비해 임상적으로
@@ -190,7 +200,7 @@ statin과 ezetimibe의 병용요법이 고강도 statin 단독요법에 비해 �
 - 중간 강도 statin을 수용 가능 최대치만큼 복용중인 환자에게 ezetimibe의
   추가가 권장된다.
 - 초기 단계에서 환자에게 statin을 늘리기보다 ezetimibe와 병용 용법을
-  권장할 수 있다. \## Limitation
+  권장할 수 있다.
+## Limitation
 - open-label -\> nocebo effect
 - 기대보다 낮은 event의 발생으로 2.0%p의 CI를 더 너그럽게 만들었다.
-- 

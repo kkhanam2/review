@@ -38,7 +38,7 @@ format: revealjs
 
 ## study population
 
-- 19세 이상 임상적으로 CAD를 진단받은 환자들, 
+- 19세 이상 임상적으로 CAD를 진단받은 환자들,
 
 - 임산부, statin과 상호작용할 수 있는 약물 복용자, 기대수명 3년 이내인 환자 등 제외
 
@@ -53,24 +53,25 @@ format: revealjs
 ## study procedures
 
 - 중간 강도 : rosuvastatin(10 mg) or atorvastatin(20 mg)
+
 - 고강도 : rosuvastatin(20 mg) or atorvastatin(40 mg)
 
-- treat to target의 목표 50mg/dL ~ 70mg/dL 사이유지
+- treat to target의 목표 50mg/dL \~ 70mg/dL 사이유지
+
 - statin 처음 복용자 : 중간 강도 시작
-- statin 복용중인 환자(<70mg/dL) : 기존 강도 유지
-- statin 복용중인 환자(>70mg/dL) : 강도 올림
+
+- statin 복용중인 환자(\<70mg/dL) : 기존 강도 유지
+
+- statin 복용중인 환자(\>70mg/dL) : 강도 올림
 
 ## study procedures
--이후 방문시
--70 mg/dL 이상	:강도 ↑ 올림 (uptitrate)
--50~70 mg/dL 미만: (목표 구간)	강도 그대로 유지
--50 mg/dL 미만 (너무 낮음):	강도 ↓ 내림 (downtitrate)
+
+-이후 방문시 -70 mg/dL 이상 :강도 ↑ 올림 (uptitrate) -50\~70 mg/dL 미만: (목표 구간) 강도 그대로 유지 -50 mg/dL 미만 (너무 낮음): 강도 ↓ 내림 (downtitrate)
 
 - 반대로 고강도 유지군은 항상 고강도 statin
 - 6주, 3개월, 6개월, 12개월, 24개월, 36개월 관찰
 
-##primary End point 
-- major adverse cardiac and cerebrovascular events,
+##primary End point - major adverse cardiac and cerebrovascular events,
 
 - 사망, 심근경색, 뇌졸중, 관상동맥 재개통술 at 3 years
 
@@ -80,15 +81,8 @@ format: revealjs
 
 ## Sample size calculation
 
--각 군 3년 MACCE 누적 발생률을 12%로 가정함.
--Noninferiority margin 3.0%
--검정력 80%
--단측검정 1종 오류 확률 2.5%
--두 그룹, 총 3686 명
--탈락율 15%
--최종 4400명, 각 군 2200명
+-각 군 3년 MACCE 누적 발생률을 12%로 가정함. -Noninferiority margin 3.0% -검정력 80% -단측검정 1종 오류 확률 2.5% -두 그룹, 총 3686 명 -탈락율 15% -최종 4400명, 각 군 2200명
 
-$$n = \frac{(Z_{0.025} + Z_{0.20})^2 \cdot [p_1(1-p_1) + p_2(1-p_2)]}{(0.03)^2}$$
-## Statistical Analyses 
+$$n = \frac{(Z_{0.025} + Z_{0.20})^2 \cdot [p_1(1-p_1) + p_2(1-p_2)]}{(0.03)^2}$$ \## Statistical Analyses
 
 - 

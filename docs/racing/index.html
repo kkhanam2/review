@@ -161,7 +161,7 @@ eunkang kang
 <ul>
 <li><p>ASCVD환자는 고강도 스타틴을 통한 LDL 콜레스트롤 수치를 낮추는 것이 가이드 라인이다.</p></li>
 <li><p>중간 강도 스타틴과 에제티미브의 조합으로도 LDL-C를 충분히 낮추는 것이 가능하다면 스타인의 부작용과 불내증을 감소할 것으로 기대.</p></li>
-<li><p>그러나 두 요법의 랜덤화된 실험이 존재하지 않음.</p></li>
+<li><p>그러나 두 요법의 장기적인 효과를 비교한 대규모 RCT가 존재하지 않음.</p></li>
 <li><p>따라서 두 요법 간 효능과 안정성을 비교하는 RACING trial 을 진행했다.</p></li>
 </ul>
 </section>
@@ -183,13 +183,14 @@ eunkang kang
 </ul>
 </section>
 <section id="randomisation" class="slide level2">
-<h2>Randomisation**</h2>
+<h2>Randomisation</h2>
 <ul>
 <li><p>환자들은 각각 1대1로 혼합복용 또는 고강도 단독 복용으로 지정</p></li>
-<li><p>permuted-block randomisation(4 or 6): 순열 블록 무작위 배정; 환자 4명 혹은 6명이 한 block이 되어 한 블럭 안에서 배정 순서를 섞어 치료군과 대조군으로 나누었다.</p></li>
-<li><p>결과적으로 대조군과 치료군의 비율이 1대1이 될 수있다.</p></li>
-<li><p>LDL-C 농도가 100mg/dL 이하인지 여부, baseline에 당뇨병을 가지고 있었는지 여부로 stratified 한다.</p></li>
-<li><p>이는 복용 방법과 결과에 영향을 주는 핵심 요인들 사이의 상관관계를 없앤다.</p></li>
+<li><p>LDL-C 농도가 100mg/dL 이하인지 여부, baseline에 당뇨병을 가지고 있었는지 여부로 층화한다.</p></li>
+<li><p>permuted-block randomisation(4 or 6): 순열 블록 무작위 배정; 환자 4명 혹은 6명이 한 block이 되어 한 블럭 안에서 배정 순서를 섞어 과 대조군으로 나누었다.</p></li>
+<li><p>결과적으로 혼합복용과 단독복용의 비율이 1대1이 될 수 있다.</p></li>
+<li><p>동시에 stratified 기준의 사람도 1대1의 비율로 나뉜다.</p></li>
+<li><p>figure_stratified_random</p></li>
 </ul>
 </section>
 <section id="procedures" class="slide level2">
@@ -224,29 +225,38 @@ eunkang kang
 <li>C = 0.02 - Z_{0.05} * sqrt{Var(D)}</li>
 <li>C = -0.01 + Z_{0.20} * sqrt{Var(D)}</li>
 <li>Var(D) = {p_1(1-p_1) + p_2(1-p_2)} / {n}</li>
-<li>n =(Z_{0.05} + Z_{0.20})^2 * [p_1(1-p_1) + p_2(1-p_2)] / (0.02 - (-0.01))^2</li>
+<li><span class="math display">\[n = \frac{(Z_{0.05} + Z_{0.20})^2 \cdot [p_1(1-p_1) + p_2(1-p_2)]}{(0.02-(p_1-p_2)^2}\]</span></li>
 <li>n= 1605</li>
 <li>두 그룹이고 예상 이탈률을 15%로 잡았다.</li>
 <li>N = 1605*2 / 0.85 = 3780</li>
 </ul>
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
-<ul>
-<li><p>범주형 변수: N%</p></li>
-<li><p>연속형 변수: Mean(SD) or Median(IQR) for normal or skewed distribution</p></li>
-<li><p>primary endpoint:</p></li>
-<li><p>log rank test(두 그룹 간의 생존 차이가 존재하는가)</p></li>
-<li><p>Cox regression &amp; hazard ratio(두 투약 방법의 차이 수치)</p></li>
-<li><p>단측 검정의 95% CI 상한&lt; 2.0%인 경우 비열등하다</p></li>
-<li><p>Secondary endpoint : log rank test ; 다중성에 대한 보정이 되어있지 않다. type I error를 유의하여 해석</p></li>
-</ul>
-</section>
 <section id="statistical-analysis-1" class="slide level2">
 <h2>Statistical Analysis</h2>
-<p>-primary analysis -intention to treat(ITT); 모든 환자들이 랜덤으로 지정되고 중간에 이탈자 또한 실험 참여자로 유지-&gt; 실험의 무작위성을 유지할 수 있다.</p>
+<ul>
+<li><p>primary event</p></li>
+<li><p>Kaplan-Meier curves</p></li>
+<li><p><span class="math inline">\(S(t) = \prod_{t_i \leq t} \left[ 1 - \frac{d_i}{n_i} \right]\)</span></p></li>
+<li><p>log rank test(두 그룹 간의 생존 차이가 존재하는가)</p></li>
+<li><p><span class="math inline">\(\chi^2 = \frac{\left( \sum_{j} (O_{1j} - E_{1j}) \right)^2}{\sum_{j} V_j}\)</span></p></li>
+<li><p>단측 검정의 95% CI 상한&lt; 2.0%p인 경우 비열등하다</p></li>
+</ul>
+</section>
+<section id="statistical-analysis-2" class="slide level2">
+<h2>Statistical Analysis</h2>
+<p>-Cox proportional hazard model(얼마나 차이가 존재하는가)</p>
+<p><span class="math display">\[h(t\vert{}X) = h_0(t) \exp(\beta_1 X_1 + \beta_2 X_2 +
+\dots + \beta_p X_p)\]</span> <span class="math display">\[HR = \exp(\beta_1)\]</span></p>
+<ul>
+<li>Secondary endpoint : log rank test ; 다중성에 대한 보정이 되어있지 않다. type I error를 유의하여 해석</li>
+</ul>
+</section>
+<section id="statistical-analysis-3" class="slide level2">
+<h2>Statistical Analysis</h2>
+<p>primary analysis -intention to treat(ITT); 모든 환자들이 랜덤으로 지정되고 중간에 이탈자 또한 실험 참여자로 유지-&gt; 실험의 무작위성을 유지할 수 있다.</p>
 <p>-민감도 분석:Per-protocal 집단 배정된 치료를 받지 않았거나, 배정치료 중단 기간이 전체 추적기간의 5%를 초과한 환자를 제외 한 결과.</p>
 <p>-safety assessment: 약물을 투여받은 이력이 전혀 없는 사람을 제외.</p>
+<p>-undefined</p>
 </section>
 <section id="result" class="slide level2">
 <h2>Result</h2>
@@ -282,7 +292,6 @@ eunkang kang
 <li>초기 단계에서 환자에게 statin을 늘리기보다 ezetimibe와 병용 용법을 권장할 수 있다. ## Limitation</li>
 <li>open-label -&gt; nocebo effect</li>
 <li>기대보다 낮은 event의 발생으로 2.0%p의 CI를 더 너그럽게 만들었다.</li>
-<li></li>
 </ul>
 
 </section>
