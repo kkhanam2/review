@@ -80,10 +80,10 @@ stratified 한다.
 - 혼합 복용이 비열등하기 위한 조건으로 2% point margin 설정(임상적으로 차이가 없다고 고려되는 수치)
 
 - 5% one-sided alpha error/ 80% power
-- p2 - p1 >= 0.02
+
 
 ## Sample size
-- p_1= 14%  p_2 = 13%
+- 기대 확률 p_1= 14% ,  p_2 = 13%
 - C = 0.02 - Z_{0.05}  * sqrt{Var(D)}
 - C = -0.01 + Z_{0.20} * sqrt{Var(D)}
 - Var(D) = {p_1(1-p_1) + p_2(1-p_2)} / {n}
@@ -124,18 +124,43 @@ stratified 한다.
 ## Primary endpoint 
 
 - 병용 요법과 단독 요법 
-- rimary endpoint 환자수 172(9.1%) vs 186(9.9%) (-0.78%; 90% CI −2∙39 to 0∙83)
+- primary endpoint 환자수 172(9.1%) vs 186(9.9%) (-0.78%; 90% CI −2∙39 to 0∙83)
+
 - 심혈관계 사망 8(0.4%) vs 6(0.3%) (HR 1∙34; 95% CI 0∙46 to 3∙85; p=0∙59)
 - 주요 심혈관계 사건 153(8.1%) vs 167(8.9%) (HR 0∙91;95% CI 0∙73 to 1∙14; p=0∙41)
-
 - sensitivity 분석 결과: 160(9.1%) vs 158(9.4%) (−0∙29%; 90% CI −1∙97 to 1∙37)
 
 ## Secondary endpoint_효능
 
--두 군의 1, 2, 3년째 LDL-C 목표 도달율은 각각 73% vs 55%, 75% vs 60%, 72% vs 58% (all p-value < 0.0001)
+-두 군의 1, 2, 3년째 LDL-C 목표(<70mg/dL) 도달율은 각각 73% vs 55%, 75% vs 60%, 72% vs 58% (all p-value < 0.0001)
+- $\chi^2 = \sum \frac{(O-E)^2}{E}$ 
+- 여기서 O는 실제 환자수 ,E는 두 투약법과 무관한 평균 성공률로 계산한 기대 환자수
+- 이때 기대 성공 확률은 2140/3348 , 1년째 itt population; 1675(혼합) : 1673(단독)
+- 혼합 성공$\frac{(1217 - 1070.8)^2}{1070.8} \approx \mathbf{19.96}$
+- 혼합 실패$\frac{(458 - 604.2)^2}{604.2} =  \approx \mathbf{35.38}$
+- 단독 성공: $\frac{(923 - 1069.2)^2}{1069.2} =  \approx \mathbf{20.00}$
+- 단독 실패: $\frac{(750 - 603.8)^2}{603.8} =  \approx \mathbf{35.41}$
+- $$\chi^2 = 19.96 + 35.38 + 20.00 + 35.41 \approx \mathbf{110.75}$$
+- df = (행-1) * (열 -1)= 1 , 0.0001의 임계값은 15.13
+
+
 
 ## Secondary endpoint_안전
--두 군의 이탈률, 약물 투여량 감소 환자수는 각각 88명(4.8%) vs 150()
+-두 군의 이탈률, 약물 투여량 감소 환자수는 각각 88명(4.8%) vs 150(8.2%)(all p-value < 0.0001)
 
 
-샘플수 . random strified /  itt   / pp 제외 / p value / 분석 / 
+
+## Conclusion
+-RACING trial은 3년의 관찰 결과, ASCVD 환자를 대상으로 중간 강도 statin과 ezetimibe의
+병용요법이 고강도 statin 단독요법에 비해 임상적으로 열등하지 않으며, LDL-C 목표치 달성 및 복약 유지 면에서는 더 우월할 수 있음을 보였다.
+
+## Discussion
+- 환자수를 충분히 늘린다면 우월성 검정을 수행할 수도 있다. 다만 비용이 늘어난다.
+- 중간 강도 statin을 수용 가능 최대치만큼 복용중인 환자에게 ezetimibe의 추가가 권장된다.
+- 초기 단계에서 환자에게 statin을 늘리기보다 ezetimibe와 병용 용법을 권장할 수 있다.
+## Limitation
+- open-label -> nocebo effect
+- 기대보다 낮은 event의 발생으로 2.0%p의 CI를 더 너그럽게 만들었다.
+- 
+
+

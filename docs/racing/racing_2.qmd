@@ -1,0 +1,408 @@
+---
+title: "RACING trial"
+subtitle: "중강도 스타틴–에제티미브 병용요법 vs. 고강도 스타틴 단독요법"
+author: "Eunkang Kang"
+lang: ko
+format:
+  revealjs:
+    theme: simple
+    slide-number: c/t
+    progress: true
+    transition: fade
+    center: false
+    width: 1600
+    height: 900
+    margin: 0.07
+    navigation-mode: linear
+    controls-layout: edges
+    footer: "Kim BK et al. Lancet. 2022;400:380–390"
+    include-in-header:
+      text: |
+        <style>
+        :root { --r-heading-color: #17365d; --r-link-color: #1f6f8b; }
+        .reveal { font-size: 34px; }
+        .reveal h2 { border-bottom: 3px solid #2a9d8f; padding-bottom: .18em; }
+        .reveal h3 { color: #1f6f8b; }
+        .reveal strong { color: #b23a48; }
+        .reveal table { font-size: .76em; }
+        .reveal .small { font-size: .70em; }
+        .reveal .tiny { font-size: .56em; }
+        .reveal .key { background: #eef7f5; border-left: 8px solid #2a9d8f; padding: .65em .85em; }
+        .reveal .number { font-size: 1.65em; font-weight: 700; color: #17365d; line-height: 1; }
+        .reveal .subtle { color: #666; }
+        </style>
+---
+
+## 오늘의 질문
+
+::: {.key}
+ASCVD 환자에서 **rosuvastatin 10 mg + ezetimibe 10 mg**은  
+**rosuvastatin 20 mg**과 비교해 3년 임상 결과가 열등하지 않은가?
+:::
+
+. . .
+
+그리고 병용요법은
+
+- LDL-C 목표 도달률을 높이는가?
+- 약제 불내증에 따른 중단·감량을 줄이는가?
+
+## 핵심 용어
+
+::: columns
+::: {.column width="33%"}
+### ASCVD
+
+죽상경화반으로 발생하는 심혈관질환
+
+심근경색, 급성관상동맥증후군, 허혈성 뇌졸중, 말초동맥질환 등
+:::
+
+::: {.column width="33%"}
+### LDL-C
+
+저밀도 지단백 콜레스테롤
+
+ASCVD의 주요 치료 표적
+:::
+
+::: {.column width="33%"}
+### 두 약제
+
+**Statin:** 간의 콜레스테롤 합성 억제
+
+**Ezetimibe:** 장의 콜레스테롤 흡수 억제
+:::
+:::
+
+## 임상적 배경
+
+- ASCVD의 이차예방에서는 LDL-C를 충분히 낮추는 치료가 중요함
+- 고강도 스타틴은 효과적이지만 일부 환자는 불내증 때문에 감량하거나 중단함
+- 서로 다른 기전의 약제를 병용하면 스타틴 용량을 낮추면서 LDL-C를 더 낮출 가능성이 있음
+
+::: {.key}
+RACING은 두 전략의 **장기 임상 사건**을 직접 비교한 비열등성 무작위시험이다.
+:::
+
+## PICO
+
+| 요소 | 내용 |
+|---|---|
+| **Population** | LDL-C 목표가 <70 mg/dL인 19–80세 ASCVD 환자 |
+| **Intervention** | Rosuvastatin 10 mg + ezetimibe 10 mg 1일 1회 |
+| **Comparator** | Rosuvastatin 20 mg 1일 1회 |
+| **Outcome** | 3년 심혈관 사망, 주요 심혈관 사건 또는 비치명적 뇌졸중 |
+
+## 연구설계
+
+::: columns
+::: {.column width="54%"}
+- 연구자 주도, 다기관 무작위 배정
+- 공개, 평행군, 비열등성 시험
+- 대한민국 26개 기관
+- 등록: 2017년 2월 14일–2018년 12월 18일
+- 추적 관찰: 3년
+- ClinicalTrials.gov: NCT03044665
+:::
+
+::: {.column width="46%"}
+```{mermaid}
+flowchart TB
+  A[ASCVD 환자<br/>N = 3,780] --> B[1:1 무작위 배정]
+  B --> C[병용요법<br/>n = 1,894]
+  B --> D[단독요법<br/>n = 1,886]
+  C --> E[3년 추적]
+  D --> E
+```
+:::
+:::
+
+## 대상 환자
+
+### 주요 포함 기준
+
+- 19–80세
+- 문서로 확인된 ASCVD
+- 고강도 지질강하요법이 필요한 환자: LDL-C 목표 <70 mg/dL
+
+### ASCVD의 범위
+
+- 심근경색 또는 급성관상동맥증후군 병력
+- 관상동맥 또는 기타 동맥 재개통술 병력
+- 허혈성 뇌졸중 또는 말초동맥질환
+
+## 무작위 배정
+
+- 1:1 permuted-block randomisation
+- 블록 크기: 4 또는 6
+- 다음 두 변수로 층화
+  - 기저 LDL-C ≤100 vs. >100 mg/dL
+  - 기저 당뇨병 유무
+
+::: {.key}
+층화 무작위 배정은 예후와 관련된 두 요인이 치료군 사이에 불균형하게 배정될 가능성을 낮춘다.
+:::
+
+## 치료와 추적
+
+::: columns
+::: {.column width="48%"}
+### 병용요법
+
+<div class="number">10 + 10 mg</div>
+
+Rosuvastatin 10 mg  
++ ezetimibe 10 mg
+:::
+
+::: {.column width="48%"}
+### 고강도 단독요법
+
+<div class="number">20 mg</div>
+
+Rosuvastatin 20 mg
+:::
+:::
+
+첫 추적은 2개월, 다음 추적은 6개월, 이후 매년 시행
+
+## 평가변수
+
+### Primary endpoint
+
+3년 이내 처음 발생한 다음 사건의 복합결과
+
+- 심혈관 사망
+- 주요 심혈관 사건
+- 비치명적 뇌졸중
+
+### 주요 secondary endpoints
+
+- 1·2·3년 LDL-C <70 mg/dL 도달
+- 불내증으로 인한 연구 약제 중단 또는 감량
+- 전체 사망을 포함한 복합 임상결과와 개별 임상 사건
+
+## 비열등성 가설
+
+결과 차이 = **병용요법 사건률 − 단독요법 사건률**
+
+```{mermaid}
+flowchart LR
+  A[병용요법이 유리<br/>차이 < 0] --- B[차이 = 0]
+  B --- C[비열등성 한계<br/>+2.0%p]
+  C --- D[병용요법이 열등]
+```
+
+::: {.key}
+90% CI의 **상한이 +2.0%p보다 작으면** 병용요법의 비열등성을 선언한다.
+:::
+
+<div class="small subtle">단측 α = 0.05와 양측 90% CI는 같은 판정 기준이다.</div>
+
+## 표본수와 분석집단
+
+::: columns
+::: {.column width="50%"}
+### 표본수
+
+- 예상 3년 사건률: 병용 13%, 단독 14%
+- 비열등성 한계: 절대차 2.0%p
+- 단측 α = 0.05, 검정력 80%
+- 15% 탈락을 고려한 목표 표본수: **3,780명**
+:::
+
+::: {.column width="50%"}
+### 분석집단
+
+- Primary: intention-to-treat (ITT)
+- Sensitivity: per-protocol (PP)
+- Safety: 연구 약제를 한 번 이상 복용한 환자
+:::
+:::
+
+## 기저 특성
+
+::: columns
+::: {.column width="25%"}
+<div class="number">64세</div>
+
+평균 연령
+:::
+
+::: {.column width="25%"}
+<div class="number">75%</div>
+
+남성
+:::
+
+::: {.column width="25%"}
+<div class="number">40%</div>
+
+심근경색 병력
+:::
+
+::: {.column width="25%"}
+<div class="number">37%</div>
+
+당뇨병
+:::
+:::
+
+<br>
+
+- 전체 3,780명: 병용요법 1,894명, 단독요법 1,886명
+- 이전 PCI 병력 66%
+- 두 군의 기저 특성은 전반적으로 균형을 이룸
+
+## Primary endpoint
+
+::: columns
+::: {.column width="48%"}
+### 병용요법
+
+<div class="number">172 / 1,894</div>
+
+**9.1%**
+:::
+
+::: {.column width="48%"}
+### 고강도 단독요법
+
+<div class="number">186 / 1,886</div>
+
+**9.9%**
+:::
+:::
+
+::: {.key}
+절대차 **−0.78%p** (90% CI −2.39–0.83)  
+CI 상한 0.83%p < 비열등성 한계 2.0%p → **비열등성 충족**
+:::
+
+## 비열등성 결과의 해석
+
+```{mermaid}
+flowchart LR
+  L[−2.39] --- P[점추정<br/>−0.78] --- U[0.83]
+  U -. CI 상한 .-> M[비열등성 한계<br/>2.00]
+```
+
+- 추정된 차이는 병용요법 쪽으로 −0.78%p였음
+- 그러나 이 연구는 우월성보다 비열등성 입증을 목적으로 설계됨
+- “차이가 없다”가 아니라, **사전에 정한 허용 한계보다 나쁘지 않았다**는 뜻임
+
+## Primary endpoint 구성요소
+
+| 3년 결과 | 병용요법 | 단독요법 | Effect estimate |
+|---|---:|---:|---:|
+| 심혈관 사망 | 8 (0.4%) | 6 (0.3%) | HR 1.34 (95% CI 0.46–3.85) |
+| 주요 심혈관 사건 | 153 (8.1%) | 167 (8.9%) | HR 0.91 (95% CI 0.73–1.14) |
+
+<div class="small">
+
+- 심혈관 사망은 사건 수가 적어 CI가 넓음
+- 개별 구성요소의 유의성보다 사전에 정한 복합 primary endpoint가 핵심임
+
+</div>
+
+## LDL-C <70 mg/dL 도달률
+
+| 시점 | 병용요법 | 고강도 단독요법 | 절대차 |
+|---|---:|---:|---:|
+| 1년 | **73%** | 55% | +18%p |
+| 2년 | **75%** | 60% | +15%p |
+| 3년 | **72%** | 58% | +14%p |
+
+모든 시점에서 **P < 0.001**
+
+::: {.key}
+중강도 스타틴에 ezetimibe를 처음부터 병용한 군에서 LDL-C 목표 도달률이 일관되게 높았다.
+:::
+
+## 치료 지속 가능성
+
+### 불내증으로 인한 약제 중단 또는 감량
+
+| 치료군 | 환자 수 | 발생률 |
+|---|---:|---:|
+| 병용요법 | 88 | **4.8%** |
+| 고강도 단독요법 | 150 | **8.2%** |
+
+**절대차 −3.4%p, P < 0.001**
+
+::: {.key}
+3년 동안 약 29명에게 병용 전략을 적용하면 1명의 중단·감량을 줄이는 규모의 절대차이다.  
+<span class="small">단순 발생률 차이로 계산한 NNT ≈ 1 / 0.034 = 29</span>
+:::
+
+## Per-protocol sensitivity analysis
+
+- Primary endpoint: **160 (9.1%) vs. 158 (9.4%)**
+- 절대차: **−0.29%p**
+- 90% CI: **−1.97–1.37**
+- CI 상한 1.37%p < 비열등성 한계 2.0%p
+
+::: {.key}
+ITT와 PP 분석에서 비열등성 결론이 일치했다.
+:::
+
+## 연구의 강점
+
+- 3,780명을 무작위 배정한 다기관 임상시험
+- 단순 LDL-C 변화가 아니라 3년 임상 사건을 primary endpoint로 평가
+- 임상에서 실제로 선택하는 두 치료 전략을 직접 비교
+- ITT와 PP 분석에서 같은 비열등성 결론
+- LDL-C 목표 도달과 약제 지속 가능성을 함께 제시
+
+## 연구의 한계
+
+- 공개 연구이므로 주관적인 불내증 보고와 중단·감량 결정에 영향을 줄 수 있음
+- 대한민국 환자만 포함되어 다른 인종·의료환경으로 일반화할 때 주의가 필요함
+- 예상보다 primary event가 적어 개별 사건, 특히 심혈관 사망의 CI가 넓음
+- 제약회사의 연구비 지원이 있었음
+- Secondary endpoint의 다중비교가 보정되지 않아 탐색적으로 해석할 항목이 있음
+
+## 임상적 해석
+
+::: {.key}
+**중강도 rosuvastatin + ezetimibe**는 고강도 rosuvastatin 단독요법보다 3년 복합 심혈관 결과가 열등하지 않았다.
+:::
+
+- LDL-C <70 mg/dL 도달률은 병용요법에서 더 높았음
+- 불내증에 따른 약제 중단·감량은 병용요법에서 더 적었음
+- 따라서 고강도 스타틴 증량만이 아니라 초기부터 ezetimibe를 병용하는 전략도 선택지로 볼 수 있음
+- 다만 “모든 환자에서 우월하다”는 결론은 아니며 환자 특성과 치료 목표를 함께 고려해야 함
+
+## Take-home message
+
+::: columns
+::: {.column width="33%"}
+### 1. Efficacy
+
+3년 복합 임상결과에서 **비열등**
+:::
+
+::: {.column width="33%"}
+### 2. LDL-C
+
+목표 도달률이 **14–18%p 높음**
+:::
+
+::: {.column width="33%"}
+### 3. Tolerability
+
+중단·감량이 **3.4%p 낮음**
+:::
+:::
+
+## References {.smaller}
+
+1. Kim BK, Hong SJ, Lee YJ, et al. Long-term efficacy and safety of moderate-intensity statin with ezetimibe combination therapy versus high-intensity statin monotherapy in patients with atherosclerotic cardiovascular disease (RACING). *Lancet*. 2022;400:380–390. [doi:10.1016/S0140-6736(22)00916-3](https://doi.org/10.1016/S0140-6736(22)00916-3)
+2. [PubMed: PMID 35863366](https://pubmed.ncbi.nlm.nih.gov/35863366/)
+3. [ClinicalTrials.gov: NCT03044665](https://clinicaltrials.gov/study/NCT03044665)
+4. [American College of Cardiology: RACING trial summary](https://www.acc.org/latest-in-cardiology/clinical-trials/2022/08/05/15/37/racing)
+
+<div class="tiny subtle">
+Funding: Hanmi Pharmaceutical. 원 논문의 이해상충과 연구비 지원 내역은 원문 참조.
+</div>
