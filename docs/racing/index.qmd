@@ -1,7 +1,9 @@
 ---
-title: "ASCVD 환자에게 중간 강도 statin과 ezetimibe의 combination과 고강도 statin의 차이 "
+title: "ASCVD 환자에게 중간 강도 statin과 ezetimibe의 combination과 고강도 statin의 효능 비교 "
 author: "eunkang kang"
-format: revealjs
+format: 
+  revealjs:
+     footer: RACING
 editor: 
   markdown: 
     wrap: 72
@@ -68,7 +70,7 @@ editor:
 
 - 동시에 stratified 기준의 사람도 1대1의 비율로 나뉜다.
 
-- figure_stratified_random
+- <img src="RACING Figure 1.png"/>
 
 ## Procedures
 
@@ -108,6 +110,7 @@ editor:
 - N = 1605\*2 / 0.85 = 3780
 
 ## Statistical Analysis
+
 - primary event
 
 - Kaplan-Meier curves
@@ -118,16 +121,14 @@ editor:
 
 - $\chi^2 = \frac{\left( \sum_{j} (O_{1j} - E_{1j}) \right)^2}{\sum_{j} V_j}$
 
-- 단측 검정의 95% CI 상한\< 2.0%p인 경우
-비열등하다
+- 단측 검정의 95% CI 상한\< 2.0%p인 경우 비열등하다
 
 ## Statistical Analysis
 
 -Cox proportional hazard model(얼마나 차이가 존재하는가)
 
 $$h(t\vert{}X) = h_0(t) \exp(\beta_1 X_1 + \beta_2 X_2 +
-\dots + \beta_p X_p)$$ 
-$$HR = \exp(\beta_1)$$
+\dots + \beta_p X_p)$$ $$HR = \exp(\beta_1)$$
 
 - Secondary endpoint : log rank test ; 다중성에 대한 보정이 되어있지
   않다. type I error를 유의하여 해석
@@ -143,8 +144,6 @@ primary analysis -intention to treat(ITT); 모든 환자들이 랜덤으로
 
 -safety assessment: 약물을 투여받은 이력이 전혀 없는 사람을 제외.
 
--undefined
-
 ## Result
 
 -2017.02.14\~2018.12.18 3780명 모집 -1894명은 혼합 복용, 1886명은 단독
@@ -155,20 +154,12 @@ primary analysis -intention to treat(ITT); 모든 환자들이 랜덤으로
 
 - 병용 요법과 단독 요법
 
-- primary endpoint 환자수 172(9.1%) vs 186(9.9%) (-0.78%; 90% CI −2∙39
-  to 0∙83)
+<img src="RACING Table 2.png"/>
 
-- 심혈관계 사망 8(0.4%) vs 6(0.3%) (HR 1∙34; 95% CI 0∙46 to 3∙85;
-  p=0∙59)
-
-- 주요 심혈관계 사건 153(8.1%) vs 167(8.9%) (HR 0∙91;95% CI 0∙73 to
-  1∙14; p=0∙41)
-
-- sensitivity 분석 결과: 160(9.1%) vs 158(9.4%) (−0∙29%; 90% CI −1∙97 to
-  1∙37)
+<img src="RACING Figure 2.png"/>
 
 ## Secondary endpoint_효능
-
+<img src="RACING Table 3.png"/>
 -두 군의 1, 2, 3년째 LDL-C 목표(\<70mg/dL) 도달율은 각각 73% vs 55%, 75%
 vs 60%, 72% vs 58% (all p-value \< 0.0001) -
 $\chi^2 = \sum \frac{(O-E)^2}{E}$ - 여기서 O는 실제 환자수 ,E는 두
@@ -183,9 +174,13 @@ $$\chi^2 = 19.96 + 35.38 + 20.00 + 35.41 \approx \mathbf{110.75}$$ - df
 
 ## Secondary endpoint_안전
 
+
 -두 군의 이탈률, 약물 투여량 감소 환자수는 각각 88명(4.8%) vs
 150(8.2%)(all p-value \< 0.0001)
 
+##Safety Endpoint, Subgroup analysis
+<img src="RACING Table 4.png"/>
+<img src="RACING Figure 3.png"/>
 ## Conclusion
 
 -RACING trial은 3년의 관찰 결과, ASCVD 환자를 대상으로 중간 강도
@@ -200,7 +195,6 @@ statin과 ezetimibe의 병용요법이 고강도 statin 단독요법에 비해 �
 - 중간 강도 statin을 수용 가능 최대치만큼 복용중인 환자에게 ezetimibe의
   추가가 권장된다.
 - 초기 단계에서 환자에게 statin을 늘리기보다 ezetimibe와 병용 용법을
-  권장할 수 있다.
-## Limitation
+  권장할 수 있다. \## Limitation
 - open-label -\> nocebo effect
 - 기대보다 낮은 event의 발생으로 2.0%p의 CI를 더 너그럽게 만들었다.
