@@ -108,4 +108,67 @@ $$\widehat{Var}(\hat{S}(t)) = \hat{S}(t)^2 \sum_{t_i \le t} \frac{d_i}{n_i(n_i -
 
 - 랜덤으로 배정되고 나서 지정된 치료를 받지 않은 참여자를 제외하고 진행되었다. 
 
--Subgroup analysis: 
+-Subgroup analysis: 연령, 성별, 체질량지수(BMI), 고혈압, 당뇨병, 만성 신장 질환, 무작위 배정 당시의 임상적 발현 상태, 기저 LDL-C 수치
+
+## Study design
+
+
+## Figure
+
+<img src="LOADSTAR Study design.png"/>
+
+
+## Results
+
+## Baseline characteristic
+
+- 2016/09/09 \~ 2019/11/27
+- 무작위화 당시 진단받거나 시술/수술받은 지 1년이 넘은 사람: 74% 
+- 고강도, 중간 강도 statin 치료를 받던 사람: 25%, 57%
+- 4400명 중 4341명이 3년간 follow up 
+
+## Figure 1
+
+<img src="LOADSTAR Figure 1.png"/>
+
+## Table 1
+
+<img src="LOADSTAR Table 1.png"/>
+
+## Lipid-Lowering Therapy
+-Treat-to-target 군은 1, 2, 3년 째 각각 53%, 55%, 56%가 고강도 statin 처방받음.
+
+-High-intensity 군은 1, 2, 3년 째 각각 93%, 91%, 89%가 고강도 statin 처방받음.
+
+-Ezetimibe은 Treat-to-target 군에서 강하게 권고하지 않았음에도, 더 많이 사용함.
+
+<img src="LOADSTAR Figure 2.png"/>
+
+## Changes in LDL-C Levels
+
+- 첫 6주: treat to target group 에서 LDL-C 농도가 유의미하게 높았음.(69.6[21.2]mg/dLvs66.8[21.8]mg/dL;+2.8mg/dL[95%CI,1.3to4.3];P<.001).
+- 전체 기간: 두 군의 LDL-C 수치에 유의미한 차이 없음. (69.1mg/dL vs 68.4mg/dL; p=0.21)
+
+
+## Endpoint
+
+- Primary: Treat-to-target, High-intensity의 MACCE 누적발생률이 각각 8.1%, 8.7%로 나타남.(-0.6%pp; 97.5% CI upper bound: 1.1pp, p-value \< 0.001
+
+-   Secondary: 두 군간 유의미한 차이 없었다.
+-   그러나 사후 검정 결과 당뇨 발생 + 간/근육/콩팥 독성의 합은 Treat-to-target 군에서 유의미하게 낮았다.(6.1% vs 8.2%; p-value = 0.009)
+## LDL-C and Endpoints
+
+<img src="LOADSTAR Figure 3.png"/>
+
+## LDL-C and Endpoints
+
+<img src="LOADSTAR Table 2.png"/>
+
+## Discussion 
+-6개월의 관찰 결과, CAD 환자를 대상으로 MACCE 발생의 측면에서 treat-to-target strategy가 high-intensity strategy에 비해 열등하지 않음을 보였다.
+
+- 
+- 
+
+
+
