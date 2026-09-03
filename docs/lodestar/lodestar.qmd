@@ -1,0 +1,94 @@
+---
+title: "Treat-to-Target vs High-Intensity Statin in Coronary Artery Disease"
+author: "eunkang kang"
+format: revealjs
+---
+
+## glossary
+
+-Coronary artery : 관상동맥; 심장에 혈액을 공급하는 동맥
+
+-Coronary artery disease(CAD) : 관상동맥질환; 관상동맥이 막히거나 수축하여 심장으로의 혈액 공급이 어려운 질환군. 대개 죽상동맥경화가 원인임.
+
+-Atherosclerotic cardiovascular disease(ASCVD) : 동맥경화성 심혈관질환; 죽상동맥경화로 인해 발생한 심혈관 질환군으로, 대개 이상지질혈증이 원인임. 관상동맥질환, 뇌혈관질환, 말초혈관질환, 대동맥류, 장허혈 등이 포함됨.
+
+## glossay
+
+-Statin : 스타틴; 콜레스테롤 합성 효소를 억제하여 혈중 LDL-C 농도를 낮추는 약.
+
+-Low-density lipoprotein cholesterol(LDL-C) : 간에서 조직 말단, 혈관으로 운반되는 콜레스테롤.
+
+## background
+
+-CAD 환자의 심혈관계 사고 발생을 낮추기 위해 LDL-C를 낮추는 statin의 처방이 권고됨.
+
+- 단순히 고강도 statin은 단순할지 모르나 부작용이 존재.
+
+- 따라서 중강도의 statin으로 시작해 특정 목표 LCL-C 농도를 맞추는 방법이 대안임.
+
+- 이 실험에서는 treat to target 전략이 고강도 statin 처방에 비해 비열등하는 것을 보인다.
+
+## method
+
+## Study design
+
+- investigator-initiated, multicenter, random ized, open-label, noninferiority trial
+
+- 한국의 12개의 center에서 진행
+
+## study population
+
+- 19세 이상 임상적으로 CAD를 진단받은 환자들, 
+
+- 임산부, statin과 상호작용할 수 있는 약물 복용자, 기대수명 3년 이내인 환자 등 제외
+
+## Randomization
+
+- 환자들은 1대1로 treat to target 방식 혹은 고강도 statin therapy로 나누어짐. 또한 각 환자군은 1대1로 두가지 statin(rosuvastatin or atorvastatin)으로 랜덤 배정
+
+- stratified randomization: 초기 LDL-C level (100mg/dL), 급성 관상 동맥 증후군, 당뇨병의 여부에 따라 층화
+
+- permuted-block randomization(mixed blocks of 4 or 6): 각 환자를 층 별로, statin 종류 별로, 투여 방식 별로 1대1이 되도록 나누어준다.
+
+## study procedures
+
+- 중간 강도 : rosuvastatin(10 mg) or atorvastatin(20 mg)
+- 고강도 : rosuvastatin(20 mg) or atorvastatin(40 mg)
+
+- treat to target의 목표 50mg/dL ~ 70mg/dL 사이유지
+- statin 처음 복용자 : 중간 강도 시작
+- statin 복용중인 환자(<70mg/dL) : 기존 강도 유지
+- statin 복용중인 환자(>70mg/dL) : 강도 올림
+
+## study procedures
+-이후 방문시
+-70 mg/dL 이상	:강도 ↑ 올림 (uptitrate)
+-50~70 mg/dL 미만: (목표 구간)	강도 그대로 유지
+-50 mg/dL 미만 (너무 낮음):	강도 ↓ 내림 (downtitrate)
+
+- 반대로 고강도 유지군은 항상 고강도 statin
+- 6주, 3개월, 6개월, 12개월, 24개월, 36개월 관찰
+
+##primary End point 
+- major adverse cardiac and cerebrovascular events,
+
+- 사망, 심근경색, 뇌졸중, 관상동맥 재개통술 at 3 years
+
+## Secondary end point
+
+- 새로운 당뇨병, 심부전으로 인한 입원, 심부정맥혈전증, 대동맥 중재/수술, 말기신질환, 검사수치 이상 복합(아미노전이효소, 크레티닌키나제, 크레아티닌)
+
+## Sample size calculation
+
+-각 군 3년 MACCE 누적 발생률을 12%로 가정함.
+-Noninferiority margin 3.0%
+-검정력 80%
+-단측검정 1종 오류 확률 2.5%
+-두 그룹, 총 3686 명
+-탈락율 15%
+-최종 4400명, 각 군 2200명
+
+$$n = \frac{(Z_{0.025} + Z_{0.20})^2 \cdot [p_1(1-p_1) + p_2(1-p_2)]}{(0.03)^2}$$
+## Statistical Analyses 
+
+- 
