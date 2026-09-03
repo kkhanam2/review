@@ -12,7 +12,7 @@ format: revealjs
 
 -Atherosclerotic cardiovascular disease(ASCVD) : 동맥경화성 심혈관질환; 죽상동맥경화로 인해 발생한 심혈관 질환군으로, 대개 이상지질혈증이 원인임. 관상동맥질환, 뇌혈관질환, 말초혈관질환, 대동맥류, 장허혈 등이 포함됨.
 
-## glossay
+## glossary
 
 -Statin : 스타틴; 콜레스테롤 합성 효소를 억제하여 혈중 LDL-C 농도를 낮추는 약.
 
@@ -20,13 +20,15 @@ format: revealjs
 
 ## background
 
--CAD 환자의 심혈관계 사고 발생을 낮추기 위해 LDL-C를 낮추는 statin의 처방이 권고됨.
+- CAD 환자의 심혈관계 사고 발생을 낮추기 위해 LDL-C를 낮추는 statin의 처방이 권고됨.
+
+<!-- -->
 
 - 단순히 고강도 statin은 단순할지 모르나 부작용이 존재.
 
 - 따라서 중강도의 statin으로 시작해 특정 목표 LCL-C 농도를 맞추는 방법이 대안임.
 
-- 이 실험에서는 treat to target 전략이 고강도 statin 처방에 비해 비열등하는 것을 보인다.
+- 이 실험에서는 treat to target 전략이 고강도 statin 처방에 비해 비열등하는 것을 보이고자
 
 ## method
 
@@ -71,7 +73,9 @@ format: revealjs
 - 반대로 고강도 유지군은 항상 고강도 statin
 - 6주, 3개월, 6개월, 12개월, 24개월, 36개월 관찰
 
-##primary End point - major adverse cardiac and cerebrovascular events,
+## primary End point
+
+- major adverse cardiac and cerebrovascular events(MACCE)
 
 - 사망, 심근경색, 뇌졸중, 관상동맥 재개통술 at 3 years
 
@@ -85,4 +89,23 @@ format: revealjs
 
 $$n = \frac{(Z_{0.025} + Z_{0.20})^2 \cdot [p_1(1-p_1) + p_2(1-p_2)]}{(0.03)^2}$$ \## Statistical Analyses
 
-- 
+## Statistical analysis
+
+- primary end points
+
+- Kaplan-Meier curves
+
+- $S(t) = \prod_{t_i \leq t} \left[ 1 - \frac{d_i}{n_i} \right]$
+
+- Com-Nougue approach $$Z = \frac{(\hat{F}_{T}(t_0) - \hat{F}_{C}(t_0)) - \Delta}{\sqrt{\widehat{Var}(\hat{F}_{T}(t_0)) + \widehat{Var}(\hat{F}_{C}(t_0))}}$$
+
+- greenwood formula
+
+$$\widehat{Var}(\hat{S}(t)) = \hat{S}(t)^2 \sum_{t_i \le t} \frac{d_i}{n_i(n_i - d_i)}$$
+
+- Noninferiority는 두 군 MACCE 누적발생률 차이의 단측 97.5% CI 상한 \< 3.0% 일 때 입증
+##  Statistical analysis
+
+- 랜덤으로 배정되고 나서 지정된 치료를 받지 않은 참여자를 제외하고 진행되었다. 
+
+-Subgroup analysis: 
