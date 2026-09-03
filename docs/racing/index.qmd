@@ -176,7 +176,7 @@ $$\chi^2 = 19.96 + 35.38 + 20.00 + 35.41 \approx \mathbf{110.75}$$ - df
 -두 군의 이탈률, 약물 투여량 감소 환자수는 각각 88명(4.8%) vs
 150(8.2%)(all p-value \< 0.0001)
 
-## Conclusion
+## Conclusion 
 
 -RACING trial은 3년의 관찰 결과, ASCVD 환자를 대상으로 중간 강도
 statin과 ezetimibe의 병용요법이 고강도 statin 단독요법에 비해 임상적으로
