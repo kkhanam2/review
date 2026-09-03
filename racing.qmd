@@ -82,7 +82,7 @@ format:
 - 연구 대상 및 제외 기준
 :::
 
-::: {.column width="50%"}
+::: {.column width="50%"} 
 ### Treatment groups
 
 - 중강도 스타틴 + 에제티미브
