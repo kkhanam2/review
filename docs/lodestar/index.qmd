@@ -3,7 +3,7 @@ title: "Treat-to-Target vs High-Intensity Statin in Coronary Artery Disease"
 author: "eunkang kang"
 format:
   revealjs:
-    scrollable: true
+    scrollable: TRUE
 ---
 
 ## glossary
