@@ -1,5 +1,5 @@
 ---
-title: "ASCVD 환자에게 중간 강도 statin과 ezetimibe의 combination과 고강도 statin의 효능 비교 "
+title: "중간 강도 statin과 ezetimibe의 combination과 고강도 statin의 효능 비교 "
 author: "eunkang kang"
 format: 
   revealjs:
