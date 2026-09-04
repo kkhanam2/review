@@ -48,6 +48,7 @@
     }
     .reveal .slide:not(.center) {
       height: 100%;
+      overflow-y: auto;
     }
     .reveal .slide.scrollable {
       overflow-y: auto;
@@ -224,7 +225,7 @@ eunkang kang
 <section id="sample-size-calculation" class="slide level2">
 <h2>Sample size calculation</h2>
 <p>-각 군 3년 MACCE 누적 발생률을 12%로 가정함. -Noninferiority margin 3.0% -검정력 80% -단측검정 1종 오류 확률 2.5% -두 그룹, 총 3686 명 -탈락율 15% -최종 4400명, 각 군 2200명</p>
-<p><span class="math display">\[n = \frac{(Z_{0.025} + Z_{0.20})^2 \cdot [p_1(1-p_1) + p_2(1-p_2)]}{(0.03)^2}\]</span> ## Statistical Analyses</p>
+<p><span class="math display">\[n = \frac{(Z_{0.025} + Z_{0.20})^2 \cdot [p_1(1-p_1) + p_2(1-p_2)]}{(0.03)^2}\]</span></p>
 </section>
 <section id="statistical-analysis" class="slide level2">
 <h2>Statistical analysis</h2>
@@ -232,10 +233,12 @@ eunkang kang
 <li><p>primary end points</p></li>
 <li><p>Kaplan-Meier curves</p></li>
 <li><p><span class="math inline">\(S(t) = \prod_{t_i \leq t} \left[ 1 - \frac{d_i}{n_i} \right]\)</span></p></li>
-<li><p>Com-Nougue approach <span class="math display">\[Z = \frac{(\hat{F}_{T}(t_0) - \hat{F}_{C}(t_0)) - \Delta}{\sqrt{\widehat{Var}(\hat{F}_{T}(t_0)) + \widehat{Var}(\hat{F}_{C}(t_0))}}\]</span></p></li>
-<li><p>greenwood formula</p></li>
+<li><p>Com-Nougue approach <span class="math inline">\(Z = \frac{(\hat{F}_{T}(t_0) - \hat{F}_{C}(t_0)) - \Delta}{\sqrt{\widehat{Var}(\hat{F}_{T}(t_0)) + \widehat{Var}(\hat{F}_{C}(t_0))}}\)</span></p></li>
+<li><p>greenwood formula <span class="math inline">\(\widehat{Var}(\hat{S}(t)) = \hat{S}(t)^2 \sum_{t_i \le t} \frac{d_i}{n_i(n_i - d_i)}\)</span></p></li>
 </ul>
-<p><span class="math display">\[\widehat{Var}(\hat{S}(t)) = \hat{S}(t)^2 \sum_{t_i \le t} \frac{d_i}{n_i(n_i - d_i)}\]</span></p>
+</section>
+<section id="statistical-analysis-1" class="slide level2">
+<h2>Statistical analysis</h2>
 <ul>
 <li><p>Noninferiority는 두 군 MACCE 누적발생률 차이의 단측 97.5% CI 상한 &lt; 3.0% 일 때 입증 ## Statistical analysis</p></li>
 <li><p>랜덤으로 배정되고 나서 지정된 치료를 받지 않은 참여자를 제외하고 진행되었다.</p></li>
@@ -273,27 +276,30 @@ eunkang kang
 <h2>Lipid-Lowering Therapy</h2>
 <p>-Treat-to-target 군은 1, 2, 3년 째 각각 53%, 55%, 56%가 고강도 statin 처방받음.</p>
 <p>-High-intensity 군은 1, 2, 3년 째 각각 93%, 91%, 89%가 고강도 statin 처방받음.</p>
-<p>-Ezetimibe은 Treat-to-target 군에서 강하게 권고하지 않았음에도, 더 많이 사용함.</p>
-
-<img src="LOADSTAR Figure 2.png" class="r-stretch"></section>
+<p>-Ezetimibe은 Treat-to-target 군에서 강하게 권고하지 않았음에도, 더 많이 사용함. ## Lipid-Lowering Therapy <img src="LOADSTAR Figure 2.png" width="459"></p>
+</section>
 <section id="changes-in-ldl-c-levels" class="slide level2">
 <h2>Changes in LDL-C Levels</h2>
 <ul>
 <li>첫 6주: treat to target group 에서 LDL-C 농도가 유의미하게 높았음.(69.6[21.2]mg/dLvs66.8[21.8]mg/dL;+2.8mg/dL[95%CI,1.3to4.3];P&lt;.001).</li>
 <li>전체 기간: 두 군의 LDL-C 수치에 유의미한 차이 없음. (69.1mg/dL vs 68.4mg/dL; p=0.21)</li>
 </ul>
-</section>
+
+<img src="LOADSTAR Figure 3.png" class="r-stretch"></section>
 <section id="endpoint" class="slide level2">
 <h2>Endpoint</h2>
 <ul>
 <li><p>Primary: Treat-to-target, High-intensity의 MACCE 누적발생률이 각각 8.1%, 8.7%로 나타남.(-0.6%pp; 97.5% CI upper bound: 1.1pp, p-value &lt; 0.001</p></li>
 <li><p>Secondary: 두 군간 유의미한 차이 없었다.</p></li>
-<li><p>그러나 사후 검정 결과 당뇨 발생 + 간/근육/콩팥 독성의 합은 Treat-to-target 군에서 유의미하게 낮았다.(6.1% vs 8.2%; p-value = 0.009) ## LDL-C and Endpoints</p></li>
+<li><p>그러나 사후 검정 결과 당뇨 발생 + 간/근육/콩팥 독성의 합은 Treat-to-target 군에서 유의미하게 낮았다.(6.1% vs 8.2%; p-value = 0.009)</p></li>
 </ul>
+</section>
+<section id="endpoint-1" class="slide level2">
+<h2>Endpoint</h2>
 
 <img src="LOADSTAR Figure 3.png" class="r-stretch"></section>
-<section id="ldl-c-and-endpoints" class="slide level2">
-<h2>LDL-C and Endpoints</h2>
+<section id="endpoints" class="slide level2">
+<h2>Endpoints</h2>
 
 <img src="LOADSTAR Table 2.png" class="r-stretch"></section>
 <section id="discussion" class="slide level2">
@@ -301,6 +307,28 @@ eunkang kang
 <p>-6개월의 관찰 결과, CAD 환자를 대상으로 MACCE 발생의 측면에서 treat-to-target strategy가 high-intensity strategy에 비해 열등하지 않음을 보였다.</p>
 <ul>
 <li>낮은 LDL-C 목표 달성율은 (약 60%) statin 외 지질강하제 병용을 권고하지 않았기 때문인 것으로 보인다.</li>
+</ul>
+</section>
+<section id="discussion-1" class="slide level2">
+<h2>Discussion</h2>
+<ul>
+<li><p>Treat to target군과 고강도 statin 사용에는 큰 차이가 있었다.(54% vs 92%) 이 점은 좋은 반응을 가진 환자에게는 굳이 반드시 고강도 statin이 필요한 것이 아님을 말한다.</p></li>
+<li><p>Secondary endpoints 에서 낮은 수치들을 보이는 것을 통해 안전성 문제에서 treat to targer이 더 나을 수 있다.</p></li>
+<li><p>다만 최근 유럽의 가이드라인이 55mg/dL이하로 낮추어저 treat to target의 명확한 목표치가 필요하다.</p></li>
+<li><p>treat to target 군의 경우 목표 LDL-C 수치 도달률리 상대적으로 낮다.</p></li>
+<li><p>평균 LDL-C 수치가 treat to target 군이 높다. 이는 titration에 시간이 필요하기 때문으로 보인다.</p></li>
+</ul>
+</section>
+<section id="limitation" class="slide level2">
+<h2>Limitation</h2>
+<ul>
+<li><p>open-label</p></li>
+<li><p>기대보다 낮은 사건 발생률, 검정이 너그러웠을 수 있다.</p></li>
+<li><p>발생한 사건의 수가 적어 1차 평가변수 내에서 개별 임상 결과들을 비교하는 것은 어려웠다</p></li>
+</ul>
+<p>-CAD 환자만을 독점적으로 모집했기 때문에, 다른 환자군들에 대한 실험도 진행이 필요할 것이다.</p>
+<ul>
+<li>LCL-C 수치가 treat to target 군에서 60%정도만 목표(70mg/dL)에 도달했기에 nonstatin 방법이 적극적으로 고려되어야 한다.</li>
 </ul>
 
 </section>
