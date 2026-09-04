@@ -87,7 +87,7 @@ format: revealjs
 
 -각 군 3년 MACCE 누적 발생률을 12%로 가정함. -Noninferiority margin 3.0% -검정력 80% -단측검정 1종 오류 확률 2.5% -두 그룹, 총 3686 명 -탈락율 15% -최종 4400명, 각 군 2200명
 
-$$n = \frac{(Z_{0.025} + Z_{0.20})^2 \cdot [p_1(1-p_1) + p_2(1-p_2)]}{(0.03)^2}$$ \## Statistical Analyses
+$$n = \frac{(Z_{0.025} + Z_{0.20})^2 \cdot [p_1(1-p_1) + p_2(1-p_2)]}{(0.03)^2}$$
 
 ## Statistical analysis
 
@@ -97,35 +97,32 @@ $$n = \frac{(Z_{0.025} + Z_{0.20})^2 \cdot [p_1(1-p_1) + p_2(1-p_2)]}{(0.03)^2}$
 
 - $S(t) = \prod_{t_i \leq t} \left[ 1 - \frac{d_i}{n_i} \right]$
 
-- Com-Nougue approach $$Z = \frac{(\hat{F}_{T}(t_0) - \hat{F}_{C}(t_0)) - \Delta}{\sqrt{\widehat{Var}(\hat{F}_{T}(t_0)) + \widehat{Var}(\hat{F}_{C}(t_0))}}$$
+- Com-Nougue approach $Z = \frac{(\hat{F}_{T}(t_0) - \hat{F}_{C}(t_0)) - \Delta}{\sqrt{\widehat{Var}(\hat{F}_{T}(t_0)) + \widehat{Var}(\hat{F}_{C}(t_0))}}$
 
-- greenwood formula
+- greenwood formula $\widehat{Var}(\hat{S}(t)) = \hat{S}(t)^2 \sum_{t_i \le t} \frac{d_i}{n_i(n_i - d_i)}$
 
-$$\widehat{Var}(\hat{S}(t)) = \hat{S}(t)^2 \sum_{t_i \le t} \frac{d_i}{n_i(n_i - d_i)}$$
+## Statistical analysis
 
-- Noninferiority는 두 군 MACCE 누적발생률 차이의 단측 97.5% CI 상한 \< 3.0% 일 때 입증
-##  Statistical analysis
+- Noninferiority는 두 군 MACCE 누적발생률 차이의 단측 97.5% CI 상한 \< 3.0% 일 때 입증 \## Statistical analysis
 
-- 랜덤으로 배정되고 나서 지정된 치료를 받지 않은 참여자를 제외하고 진행되었다. 
+- 랜덤으로 배정되고 나서 지정된 치료를 받지 않은 참여자를 제외하고 진행되었다.
 
 -Subgroup analysis: 연령, 성별, 체질량지수(BMI), 고혈압, 당뇨병, 만성 신장 질환, 무작위 배정 당시의 임상적 발현 상태, 기저 LDL-C 수치
 
 ## Study design
 
-
 ## Figure
 
 <img src="LOADSTAR Study design.png"/>
-
 
 ## Results
 
 ## Baseline characteristic
 
 - 2016/09/09 \~ 2019/11/27
-- 무작위화 당시 진단받거나 시술/수술받은 지 1년이 넘은 사람: 74% 
+- 무작위화 당시 진단받거나 시술/수술받은 지 1년이 넘은 사람: 74%
 - 고강도, 중간 강도 statin 치료를 받던 사람: 25%, 57%
-- 4400명 중 4341명이 3년간 follow up 
+- 4400명 중 4341명이 3년간 follow up
 
 ## Figure 1
 
@@ -136,52 +133,56 @@ $$\widehat{Var}(\hat{S}(t)) = \hat{S}(t)^2 \sum_{t_i \le t} \frac{d_i}{n_i(n_i -
 <img src="LOADSTAR Table 1.png"/>
 
 ## Lipid-Lowering Therapy
+
 -Treat-to-target 군은 1, 2, 3년 째 각각 53%, 55%, 56%가 고강도 statin 처방받음.
 
 -High-intensity 군은 1, 2, 3년 째 각각 93%, 91%, 89%가 고강도 statin 처방받음.
 
--Ezetimibe은 Treat-to-target 군에서 강하게 권고하지 않았음에도, 더 많이 사용함.
-
-<img src="LOADSTAR Figure 2.png"/>
+-Ezetimibe은 Treat-to-target 군에서 강하게 권고하지 않았음에도, 더 많이 사용함. \## Lipid-Lowering Therapy <img src="LOADSTAR Figure 2.png" width="459"/>
 
 ## Changes in LDL-C Levels
 
-- 첫 6주: treat to target group 에서 LDL-C 농도가 유의미하게 높았음.(69.6[21.2]mg/dLvs66.8[21.8]mg/dL;+2.8mg/dL[95%CI,1.3to4.3];P<.001).
+- 첫 6주: treat to target group 에서 LDL-C 농도가 유의미하게 높았음.(69.6\[21.2\]mg/dLvs66.8\[21.8\]mg/dL;+2.8mg/dL\[95%CI,1.3to4.3\];P\<.001).
 - 전체 기간: 두 군의 LDL-C 수치에 유의미한 차이 없음. (69.1mg/dL vs 68.4mg/dL; p=0.21)
 
+<img src="LOADSTAR Figure 3.png"/>
 
 ## Endpoint
 
 - Primary: Treat-to-target, High-intensity의 MACCE 누적발생률이 각각 8.1%, 8.7%로 나타남.(-0.6%pp; 97.5% CI upper bound: 1.1pp, p-value \< 0.001
 
--   Secondary: 두 군간 유의미한 차이 없었다.
--   그러나 사후 검정 결과 당뇨 발생 + 간/근육/콩팥 독성의 합은 Treat-to-target 군에서 유의미하게 낮았다.(6.1% vs 8.2%; p-value = 0.009)
-## LDL-C and Endpoints
+- Secondary: 두 군간 유의미한 차이 없었다.
+
+- 그러나 사후 검정 결과 당뇨 발생 + 간/근육/콩팥 독성의 합은 Treat-to-target 군에서 유의미하게 낮았다.(6.1% vs 8.2%; p-value = 0.009)
+
+## Endpoint
 
 <img src="LOADSTAR Figure 3.png"/>
 
-## LDL-C and Endpoints
+## Endpoints
 
 <img src="LOADSTAR Table 2.png"/>
 
-## Discussion 
+## Discussion
+
 -6개월의 관찰 결과, CAD 환자를 대상으로 MACCE 발생의 측면에서 treat-to-target strategy가 high-intensity strategy에 비해 열등하지 않음을 보였다.
 
 - 낮은 LDL-C 목표 달성율은 (약 60%) statin 외 지질강하제 병용을 권고하지 않았기 때문인 것으로 보인다.
- 
 
 ## Discussion
-- Treat to target군과 고강도 statin 사용에는 큰 차이가 있었다.(54% vs 92%) 이 점은 좋은 반응을 가진 환자에게는 굳이  반드시 고강도 statin이 필요한 것이 아님을 말한다.
+
+- Treat to target군과 고강도 statin 사용에는 큰 차이가 있었다.(54% vs 92%) 이 점은 좋은 반응을 가진 환자에게는 굳이 반드시 고강도 statin이 필요한 것이 아님을 말한다.
 
 - Secondary endpoints 에서 낮은 수치들을 보이는 것을 통해 안전성 문제에서 treat to targer이 더 나을 수 있다.
 
-- 다만 최근 유럽의 가이드라인이 55mg/dL이하로 낮추어저 treat to target의 명확한 목표치가 필요하다. 
+- 다만 최근 유럽의 가이드라인이 55mg/dL이하로 낮추어저 treat to target의 명확한 목표치가 필요하다.
 
 - treat to target 군의 경우 목표 LDL-C 수치 도달률리 상대적으로 낮다.
 
 - 평균 LDL-C 수치가 treat to target 군이 높다. 이는 titration에 시간이 필요하기 때문으로 보인다.
 
 ## Limitation
+
 - open-label
 
 - 기대보다 낮은 사건 발생률, 검정이 너그러웠을 수 있다.
@@ -191,8 +192,3 @@ $$\widehat{Var}(\hat{S}(t)) = \hat{S}(t)^2 \sum_{t_i \le t} \frac{d_i}{n_i(n_i -
 -CAD 환자만을 독점적으로 모집했기 때문에, 다른 환자군들에 대한 실험도 진행이 필요할 것이다.
 
 - LCL-C 수치가 treat to target 군에서 60%정도만 목표(70mg/dL)에 도달했기에 nonstatin 방법이 적극적으로 고려되어야 한다.
-
-
-
-
-
