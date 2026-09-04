@@ -170,5 +170,29 @@ $$\widehat{Var}(\hat{S}(t)) = \hat{S}(t)^2 \sum_{t_i \le t} \frac{d_i}{n_i(n_i -
 - 낮은 LDL-C 목표 달성율은 (약 60%) statin 외 지질강하제 병용을 권고하지 않았기 때문인 것으로 보인다.
  
 
+## Discussion
+- Treat to target군과 고강도 statin 사용에는 큰 차이가 있었다.(54% vs 92%) 이 점은 좋은 반응을 가진 환자에게는 굳이  반드시 고강도 statin이 필요한 것이 아님을 말한다.
+
+- Secondary endpoints 에서 낮은 수치들을 보이는 것을 통해 안전성 문제에서 treat to targer이 더 나을 수 있다.
+
+- 다만 최근 유럽의 가이드라인이 55mg/dL이하로 낮추어저 treat to target의 명확한 목표치가 필요하다. 
+
+- treat to target 군의 경우 목표 LDL-C 수치 도달률리 상대적으로 낮다.
+
+- 평균 LDL-C 수치가 treat to target 군이 높다. 이는 titration에 시간이 필요하기 때문으로 보인다.
+
+## Limitation
+- open-label
+
+- 기대보다 낮은 사건 발생률, 검정이 너그러웠을 수 있다.
+
+- 발생한 사건의 수가 적어 1차 평가변수 내에서 개별 임상 결과들을 비교하는 것은 어려웠다
+
+-CAD 환자만을 독점적으로 모집했기 때문에, 다른 환자군들에 대한 실험도 진행이 필요할 것이다.
+
+- LCL-C 수치가 treat to target 군에서 60%정도만 목표(70mg/dL)에 도달했기에 nonstatin 방법이 적극적으로 고려되어야 한다.
+
+
+
 
 
