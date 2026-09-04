@@ -1,10 +1,10 @@
 ---
 title: "중간 강도 statin과 ezetimibe의 combination과 고강도 statin의 효능 비교 "
 author: "eunkang kang"
-format: 
+format:
   revealjs:
-     footer: RACING
-     scrollable: TRUE  
+    footer: RACING
+    scrollable: true
 editor: 
   markdown: 
     wrap: 72
