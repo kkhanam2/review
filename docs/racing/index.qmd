@@ -4,6 +4,7 @@ author: "eunkang kang"
 format:
   revealjs:
     footer: RACING
+    smaller: true
     scrollable: true
 editor: 
   markdown: 

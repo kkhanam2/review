@@ -3,6 +3,7 @@ title: "Treat-to-Target vs High-Intensity Statin in Coronary Artery Disease"
 author: "eunkang kang"
 format:
   revealjs:
+    smaller: true
     scrollable: true
 ---
 
@@ -140,7 +141,8 @@ $$n = \frac{(Z_{0.025} + Z_{0.20})^2 \cdot [p_1(1-p_1) + p_2(1-p_2)]}{(0.03)^2}$
 
 -High-intensity 군은 1, 2, 3년 째 각각 93%, 91%, 89%가 고강도 statin 처방받음.
 
--Ezetimibe은 Treat-to-target 군에서 강하게 권고하지 않았음에도, 더 많이 사용함. \## Lipid-Lowering Therapy <img src="LOADSTAR Figure 2.png" width="459"/>
+-Ezetimibe은 Treat-to-target 군에서 강하게 권고하지 않았음에도, 더 많이 사용함.
+<img src="LOADSTAR Figure 2.png" width="459"/>
 
 ## Changes in LDL-C Levels
 
