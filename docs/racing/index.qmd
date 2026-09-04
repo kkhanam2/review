@@ -18,7 +18,7 @@ editor:
 - Ex) 심근경색, 협심증, 뇌졸중, 말초동맥질환, 대동맥류
 
 ## Glossary_2
-
+ 
 - Low-Density Lipoprotein Cholesterol(LDL_C) : 저밀도 지단백 콜레스테롤;
   간에서 합성된 콜레스테롤을 혈류를 통해 몸의 말단으로 운반.
 
