@@ -168,7 +168,7 @@ $$\widehat{Var}(\hat{S}(t)) = \hat{S}(t)^2 \sum_{t_i \le t} \frac{d_i}{n_i(n_i -
 -6개월의 관찰 결과, CAD 환자를 대상으로 MACCE 발생의 측면에서 treat-to-target strategy가 high-intensity strategy에 비해 열등하지 않음을 보였다.
 
 - 낮은 LDL-C 목표 달성율은 (약 60%) statin 외 지질강하제 병용을 권고하지 않았기 때문인 것으로 보인다.
-
+ 
 
 
 
