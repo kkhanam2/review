@@ -197,7 +197,7 @@ statin과 ezetimibe의 병용요법이 고강도 statin 단독요법에 비해 �
   추가가 권장된다.
 - 초기 단계에서 환자에게 statin을 늘리기보다 ezetimibe와 병용 용법을
   권장할 수 있다.
-- 
+
 ## Limitation
 - open-label -\> nocebo effect
 - 기대보다 낮은 event의 발생으로 2.0%p의 CI를 더 너그럽게 만들었다.
